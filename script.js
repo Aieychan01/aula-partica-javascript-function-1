@@ -61,7 +61,8 @@ console.log(tabuada());
 
 //03
 var maiorIdade = (ano) =>{
-   var idade = 2021 - ano;
+    let anoAtual = new Date().getFullYear();
+   var idade = anoAtual - ano;
    if(idade >= 18){
        return 'Você é de maior';
    }
